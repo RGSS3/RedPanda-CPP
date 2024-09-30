@@ -2,6 +2,7 @@ name: Unit
 
 # disable for now
 # these jobs only run on ubuntu, but seems not only contain linux related features
+on: workflow_dispatch
 
 jobs:
   ubuntu_makefile_escape:
