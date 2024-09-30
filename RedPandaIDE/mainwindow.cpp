@@ -1105,8 +1105,8 @@ void MainWindow::applyUISettings()
 
     ui->actionProject->setChecked(settings.showProject());
     showHideInfosTab(ui->tabProject,settings.showProject());
-    // ui->actionWatch->setChecked(settings.showWatch());
-    // showHideInfosTab(ui->tabWatch,settings.showWatch());
+    ui->actionWatch->setChecked(false);
+    showHideInfosTab(ui->tabWatch,settings.showWatch());
     ui->actionStructure->setChecked(settings.showStructure());
     showHideInfosTab(ui->tabStructure,settings.showStructure());
     ui->actionFiles->setChecked(settings.showFiles());
@@ -7392,6 +7392,13 @@ PSymbolUsageManager &MainWindow::symbolUsageManager()
 
 void MainWindow::showHideInfosTab(QWidget *widget, bool show)
 {
+    if (widget == ui->tabWatch) {
+        int idx = findTabIndex(ui->tabExplorer,widget);
+        if (idx >= 0) {
+            ui->tabExplorer->removeTab(idx);
+        }
+        return;
+    }
     int idx = findTabIndex(ui->tabExplorer,widget);
     if (idx>=0) {
         if (!show) {
@@ -7402,7 +7409,7 @@ void MainWindow::showHideInfosTab(QWidget *widget, bool show)
             }
 
             ui->tabExplorer->removeTab(idx);
-             ui->tabWatch->setVisible(false);
+            ui->tabWatch->setVisible(false);
         }
     } else {
         if (show && mTabInfosData.contains(widget)) {
