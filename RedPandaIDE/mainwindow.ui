@@ -1604,7 +1604,7 @@
                 <string>Add Probem Case</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/00Misc-03Add.svg</normaloff>:/resources/iconsets/newlook/actions/00Misc-03Add.svg</iconset>
                </property>
               </widget>
@@ -1618,7 +1618,7 @@
                 <string>Remove Problem Case</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/00Misc-04Remove.svg</normaloff>:/resources/iconsets/newlook/actions/00Misc-04Remove.svg</iconset>
                </property>
               </widget>
@@ -1632,7 +1632,7 @@
                 <string>Open Anwser Source File</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/08Problem-04EditSource.svg</normaloff>:/resources/iconsets/newlook/actions/08Problem-04EditSource.svg</iconset>
                </property>
               </widget>
@@ -1653,7 +1653,7 @@
                 <string>Run All Cases</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/08Problem-05RunCases.svg</normaloff>:/resources/iconsets/newlook/actions/08Problem-05RunCases.svg</iconset>
                </property>
               </widget>
@@ -1664,7 +1664,7 @@
                 <string>Problem Cases Validation Options</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/00Misc-05Gear.svg</normaloff>:/resources/iconsets/newlook/actions/00Misc-05Gear.svg</iconset>
                </property>
               </widget>
@@ -1785,7 +1785,7 @@
                 <string>Choose Input File</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/00Misc-07Folder.svg</normaloff>:/resources/iconsets/newlook/actions/00Misc-07Folder.svg</iconset>
                </property>
               </widget>
@@ -1904,7 +1904,7 @@
                 <string>Choose Expected Output File</string>
                </property>
                <property name="icon">
-                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+                <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
                  <normaloff>:/resources/iconsets/newlook/actions/00Misc-07Folder.svg</normaloff>:/resources/iconsets/newlook/actions/00Misc-07Folder.svg</iconset>
                </property>
               </widget>
@@ -1977,7 +1977,7 @@
   </widget>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/01File-01New.svg</normaloff>:/resources/iconsets/newlook/actions/01File-01New.svg</iconset>
    </property>
    <property name="text">
@@ -1992,7 +1992,7 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/01File-02Open.svg</normaloff>:/resources/iconsets/newlook/actions/01File-02Open.svg</iconset>
    </property>
    <property name="text">
@@ -2004,7 +2004,7 @@
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/01File-03Save.svg</normaloff>:/resources/iconsets/newlook/actions/01File-03Save.svg</iconset>
    </property>
    <property name="text">
@@ -2016,7 +2016,7 @@
   </action>
   <action name="actionSaveAs">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/01File-04SaveAs.svg</normaloff>:/resources/iconsets/newlook/actions/01File-04SaveAs.svg</iconset>
    </property>
    <property name="text">
@@ -2031,7 +2031,7 @@
   </action>
   <action name="actionSaveAll">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/01File-05SaveAll.svg</normaloff>:/resources/iconsets/newlook/actions/01File-05SaveAll.svg</iconset>
    </property>
    <property name="text">
@@ -2043,7 +2043,7 @@
   </action>
   <action name="actionOptions">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/00Misc-05Gear.svg</normaloff>:/resources/iconsets/newlook/actions/00Misc-05Gear.svg</iconset>
    </property>
    <property name="text">
@@ -2052,7 +2052,7 @@
   </action>
   <action name="actionCompile">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-01Compile.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-01Compile.svg</iconset>
    </property>
    <property name="text">
@@ -2067,7 +2067,7 @@
   </action>
   <action name="actionRun">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-03Run.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-03Run.svg</iconset>
    </property>
    <property name="text">
@@ -2082,7 +2082,7 @@
   </action>
   <action name="actionUndo">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-01Undo.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-01Undo.svg</iconset>
    </property>
    <property name="text">
@@ -2094,7 +2094,7 @@
   </action>
   <action name="actionRedo">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-02Redo.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-02Redo.svg</iconset>
    </property>
    <property name="text">
@@ -2106,7 +2106,7 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-03Cut.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-03Cut.svg</iconset>
    </property>
    <property name="text">
@@ -2118,7 +2118,7 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-04Copy.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-04Copy.svg</iconset>
    </property>
    <property name="text">
@@ -2130,7 +2130,7 @@
   </action>
   <action name="actionPaste">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-05Paste.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-05Paste.svg</iconset>
    </property>
    <property name="text">
@@ -2150,7 +2150,7 @@
   </action>
   <action name="actionIndent">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-06Indent.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-06Indent.svg</iconset>
    </property>
    <property name="text">
@@ -2162,7 +2162,7 @@
   </action>
   <action name="actionUnIndent">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/03Edit-07Unindent.svg</normaloff>:/resources/iconsets/newlook/actions/03Edit-07Unindent.svg</iconset>
    </property>
    <property name="text">
@@ -2220,7 +2220,7 @@
   </action>
   <action name="actionRebuild">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-04Rebuild.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-04Rebuild.svg</iconset>
    </property>
    <property name="text">
@@ -2235,7 +2235,7 @@
   </action>
   <action name="actionStop_Execution">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-11Stop.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-11Stop.svg</iconset>
    </property>
    <property name="text">
@@ -2246,8 +2246,11 @@
    </property>
   </action>
   <action name="actionDebug">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-06Debug.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-06Debug.svg</iconset>
    </property>
    <property name="text">
@@ -2261,8 +2264,11 @@
    </property>
   </action>
   <action name="actionStep_Over">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-07StepOver.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-07StepOver.svg</iconset>
    </property>
    <property name="text">
@@ -2273,8 +2279,11 @@
    </property>
   </action>
   <action name="actionStep_Into">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-08StepInto.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-08StepInto.svg</iconset>
    </property>
    <property name="text">
@@ -2285,8 +2294,11 @@
    </property>
   </action>
   <action name="actionStep_Out">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-08StepOut.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-08StepOut.svg</iconset>
    </property>
    <property name="text">
@@ -2297,8 +2309,11 @@
    </property>
   </action>
   <action name="actionRun_To_Cursor">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-09RunToCursor.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-09RunToCursor.svg</iconset>
    </property>
    <property name="text">
@@ -2309,8 +2324,11 @@
    </property>
   </action>
   <action name="actionContinue">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-10Continue.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-10Continue.svg</iconset>
    </property>
    <property name="text">
@@ -2321,8 +2339,11 @@
    </property>
   </action>
   <action name="actionAdd_Watch">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-12AddWatch.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-12AddWatch.svg</iconset>
    </property>
    <property name="text">
@@ -2380,8 +2401,11 @@
    </property>
   </action>
   <action name="actionRemove_Watch">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-13RemoveWatch.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-13RemoveWatch.svg</iconset>
    </property>
    <property name="text">
@@ -2389,18 +2413,24 @@
    </property>
   </action>
   <action name="actionRemove_All_Watches">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Remove All Watches</string>
    </property>
   </action>
   <action name="actionModify_Watch">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Modify Watch...</string>
    </property>
   </action>
   <action name="actionReformat_Code">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/04Code-05Reformat.svg</normaloff>:/resources/iconsets/newlook/actions/04Code-05Reformat.svg</iconset>
    </property>
    <property name="text">
@@ -2412,7 +2442,7 @@
   </action>
   <action name="actionBack">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/04Code-01Back.svg</normaloff>:/resources/iconsets/newlook/actions/04Code-01Back.svg</iconset>
    </property>
    <property name="text">
@@ -2424,7 +2454,7 @@
   </action>
   <action name="actionForward">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/04Code-02Forward.svg</normaloff>:/resources/iconsets/newlook/actions/04Code-02Forward.svg</iconset>
    </property>
    <property name="text">
@@ -2640,6 +2670,9 @@
    </property>
   </action>
   <action name="actionEGE_Manual">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>EGE Manual</string>
    </property>
@@ -2664,7 +2697,7 @@
   </action>
   <action name="actionRun_Parameters">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-05Options.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-05Options.svg</iconset>
    </property>
    <property name="text">
@@ -2703,6 +2736,9 @@
   <action name="actionWatch">
    <property name="checkable">
     <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>Watch</string>
@@ -2751,6 +2787,9 @@
   <action name="actionDebug_Window">
    <property name="checkable">
     <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>Debug</string>
@@ -2830,7 +2869,7 @@
   </action>
   <action name="actionInterrupt">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-16Interrupt.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-16Interrupt.svg</iconset>
    </property>
    <property name="text">
@@ -2926,7 +2965,7 @@
   </action>
   <action name="actionCompiler_Options">
    <property name="icon">
-    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc">
+    <iconset resource="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc">
      <normaloff>:/resources/iconsets/newlook/actions/05Run-17CompilerOptions.svg</normaloff>:/resources/iconsets/newlook/actions/05Run-17CompilerOptions.svg</iconset>
    </property>
    <property name="text">
@@ -3057,6 +3096,9 @@
    </property>
   </action>
   <action name="actionAdd_Watchpoint">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Add Watchpoint...</string>
    </property>
@@ -3276,7 +3318,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/RedPandaIDE/debug/qmake_iconsets_files.qrc"/>
+  <include location="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/RedPandaIDE/release/qmake_iconsets_files.qrc"/>
  </resources>
  <connections/>
 </ui>

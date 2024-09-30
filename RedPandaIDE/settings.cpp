@@ -2795,6 +2795,7 @@ bool Settings::CompilerSet::canMake() const
 
 bool Settings::CompilerSet::canDebug() const
 {
+    return false;
 #ifdef ENABLE_SDCC
     if (mCompilerType==CompilerType::SDCC)
         return false;
@@ -6228,12 +6229,12 @@ void Settings::UI::setShowStructure(bool newShowStructure)
 
 bool Settings::UI::showWatch() const
 {
-    return mShowWatch;
+    return false;
 }
 
 void Settings::UI::setShowWatch(bool newShowWatch)
 {
-    mShowWatch = newShowWatch;
+    mShowWatch = false;
 }
 
 bool Settings::UI::showProject() const

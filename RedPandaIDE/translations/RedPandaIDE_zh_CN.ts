@@ -58,7 +58,7 @@ p, li { white-space: pre-wrap; }
         <location line="+6"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;Red Panda C++&lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <oldsource>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;Red-Panda C++&lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</oldsource>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;小熊猫C++&lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;能锚C++&lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1094,7 +1094,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="-8"/>
         <source>Red Panda C++ will clear previously found compiler list and search for compilers in the following locations:&lt;br /&gt; &apos;%1&apos;&lt;br /&gt; &apos;%2&apos;&lt;br /&gt;Do you really want to continue?</source>
-        <translation>小熊猫C++ 将会清除以前搜索到的编译器配置列表，然后在下列文件夹中搜索编译器:&lt;br/&gt; &apos;%1&apos;&lt;br/&gt; &apos;%2&apos;&lt;br /&gt;你确定要继续吗？</translation>
+        <translation>能锚C++ 将会清除以前搜索到的编译器配置列表，然后在下列文件夹中搜索编译器:&lt;br/&gt; &apos;%1&apos;&lt;br/&gt; &apos;%2&apos;&lt;br /&gt;你确定要继续吗？</translation>
     </message>
     <message>
         <source>ANSI</source>
@@ -1113,7 +1113,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+238"/>
         <source>Red Panda C++ will clear previously found compiler list and search for compilers in the the PATH. &lt;br /&gt;Do you really want to continue?</source>
-        <translation>小熊猫C++ 将会清除以前搜索到的编译器配置列表，然后在PATH路径中搜索gcc编译器.&lt;br /&gt;你确定要继续吗？</translation>
+        <translation>能锚C++ 将会清除以前搜索到的编译器配置列表，然后在PATH路径中搜索gcc编译器.&lt;br /&gt;你确定要继续吗？</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1268,7 +1268,7 @@ p, li { white-space: pre-wrap; }
         <location line="+33"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Red Panda C++&apos;s Makefile has two important targets:&lt;/p&gt;&lt;p&gt;- all (which builds the executable)&lt;/p&gt;&lt;p&gt;- clean (which cleans up object files)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;all&amp;quot; depends on 2 targets: all-before and all-after. All-before&lt;/p&gt;&lt;p&gt;gets called before the compilation process, and all-after gets&lt;/p&gt;&lt;p&gt;called after the compilation process.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;clean&amp;quot; depends on the target clean-custom, which gets called&lt;/p&gt;&lt;p&gt;before the cleaning process.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;You can change the Makefile&apos;s behavior by defining the targets&lt;/p&gt;&lt;p&gt;that &amp;quot;all&amp;quot; and &amp;quot;clean&amp;quot; depend on.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <oldsource>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Red Panda Dev-C++&apos;s Makefile has two important targets:&lt;/p&gt;&lt;p&gt;- all (which builds the executable)&lt;/p&gt;&lt;p&gt;- clean (which cleans up object files)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;all&amp;quot; depends on 2 targets: all-before and all-after. All-before&lt;/p&gt;&lt;p&gt;gets called before the compilation process, and all-after gets&lt;/p&gt;&lt;p&gt;called after the compilation process.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;clean&amp;quot; depends on the target clean-custom, which gets called&lt;/p&gt;&lt;p&gt;before the cleaning process.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;You can change the Makefile&apos;s behavior by defining the targets&lt;/p&gt;&lt;p&gt;that &amp;quot;all&amp;quot; and &amp;quot;clean&amp;quot; depend on.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</oldsource>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;小熊猫C++的Makefile包括两个重要的目标（target）：&lt;/p&gt;&lt;p&gt;- all (用来构建可执行文件)&lt;/p&gt;&lt;p&gt;- clean (用来清理构建文件)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;all&amp;quot; 依赖于2个目标：all-before 和all-after. &lt;/p&gt;&lt;p&gt;构建前会调用all-before目标，构建后会调用all-after目标。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;clean&amp;quot; 依赖于目标clean-custom, 它在执行清理前被调用。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;你可以通过自定义这些目标来改变构建行为。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;能锚C++的Makefile包括两个重要的目标（target）：&lt;/p&gt;&lt;p&gt;- all (用来构建可执行文件)&lt;/p&gt;&lt;p&gt;- clean (用来清理构建文件)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;all&amp;quot; 依赖于2个目标：all-before 和all-after. &lt;/p&gt;&lt;p&gt;构建前会调用all-before目标，构建后会调用all-after目标。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&amp;quot;clean&amp;quot; 依赖于目标clean-custom, 它在执行清理前被调用。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;你可以通过自定义这些目标来改变构建行为。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -2744,12 +2744,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+6"/>
         <source>Independent Red Panda C++ applications</source>
-        <translation>独立的小熊猫C++程序进程</translation>
+        <translation>独立的能锚C++程序进程</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>The same Red Panda C++ application</source>
-        <translation>同一个小熊猫C++程序进程</translation>
+        <translation>同一个能锚C++程序进程</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2760,7 +2760,7 @@ p, li { white-space: pre-wrap; }
         <location line="+16"/>
         <source>Just check or uncheck for which file types Red Panda C++ wil be registered as the default application to open them ... </source>
         <oldsource>Just check or uncheck for which file types RedPand C++ wil be registered as the default application to open them ... </oldsource>
-        <translation>选择想要使用小熊猫C++打开的文件类型（可能需要管理员权限）</translation>
+        <translation>选择想要使用能锚C++打开的文件类型（可能需要管理员权限）</translation>
     </message>
 </context>
 <context>
@@ -4570,17 +4570,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+1"/>
         <source>Path to the Red Panda C++&apos;s executable file.</source>
-        <translation>小熊猫C++可执行文件的完整路径</translation>
+        <translation>能锚C++可执行文件的完整路径</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Version of the Red Panda C++</source>
-        <translation>小熊猫C++的版本</translation>
+        <translation>能锚C++的版本</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>PATH to the Red Panda C++&apos;s installation folder.</source>
-        <translation>小熊猫C++的安装文件夹</translation>
+        <translation>能锚C++的安装文件夹</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4659,7 +4659,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../mainwindow.ui" line="+14"/>
         <location filename="../mainwindow.cpp" line="+1322"/>
         <source>Red Panda C++</source>
-        <translation>小熊猫C++</translation>
+        <translation>能锚C++</translation>
     </message>
     <message>
         <location line="+933"/>
@@ -7372,7 +7372,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Red panda Dev-C++ project file (*.dev)</source>
-        <translation type="vanished">小熊猫Dev-C++项目文件 (*.dev)</translation>
+        <translation type="vanished">能锚Dev-C++项目文件 (*.dev)</translation>
     </message>
     <message>
         <location line="-2165"/>
@@ -7487,7 +7487,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+1130"/>
         <source>Red Panda C++ project file (*.dev)</source>
-        <translation>小熊猫C++项目文件(*.dev)</translation>
+        <translation>能锚C++项目文件(*.dev)</translation>
     </message>
     <message>
         <location line="+1021"/>
@@ -7626,7 +7626,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+0"/>
         <source>Keep it open?</source>
-        <translation>是否保持它在小熊猫C++中打开的编辑窗口？</translation>
+        <translation>是否保持它在能锚C++中打开的编辑窗口？</translation>
     </message>
     <message>
         <location line="+135"/>
@@ -8247,7 +8247,7 @@ p, li { white-space: pre-wrap; }
         <location line="+1"/>
         <source>The compiler settings format of Red Panda C++ has changed.</source>
         <oldsource>The compiler settings format of Dev-C++ has changed.</oldsource>
-        <translation>小熊猫C++的编译器设置格式已发生改变。</translation>
+        <translation>能锚C++的编译器设置格式已发生改变。</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -8273,7 +8273,7 @@ p, li { white-space: pre-wrap; }
         <location line="+94"/>
         <source>Developed using the Red Panda C++ IDE</source>
         <oldsource>Developed using the Red Panda Dev-C++ IDE</oldsource>
-        <translation>使用小熊猫C++编辑器开发</translation>
+        <translation>使用能锚C++编辑器开发</translation>
     </message>
 </context>
 <context>
@@ -9352,7 +9352,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../settings.cpp" line="+3388"/>
         <source>Would you like Red Panda C++ to search for compilers in PATH?</source>
-        <translation>您同意小熊猫C++在PATH路径中寻找gcc编译器吗？</translation>
+        <translation>您同意能锚C++在PATH路径中寻找gcc编译器吗？</translation>
     </message>
     <message>
         <location filename="../compiler/compilerinfo.cpp" line="+1"/>
@@ -9580,7 +9580,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Would you like Red Panda C++ to remove them for you and add the default paths to the valid paths?</source>
-        <translation type="vanished">是否让小熊猫C++删除这些配置，并尝试重新建立配置？</translation>
+        <translation type="vanished">是否让能锚C++删除这些配置，并尝试重新建立配置？</translation>
     </message>
     <message>
         <source>Leaving those directories will lead to problems during compilation.&lt;br /&gt;&lt;br /&gt;Unless you know exactly what you&apos;re doing, it is recommended that you click Yes.</source>
@@ -9595,7 +9595,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="-4"/>
         <source>Would you like Red Panda C++ to search for compilers in the following locations: &lt;BR /&gt;&apos;%1&apos;&lt;BR /&gt;&apos;%2&apos;? </source>
-        <translation>您需要小熊猫C++在下列位置搜索编译器吗：&lt;br /&gt;%1&lt;br /&gt;%2</translation>
+        <translation>您需要能锚C++在下列位置搜索编译器吗：&lt;br /&gt;%1&lt;br /&gt;%2</translation>
     </message>
     <message>
         <location filename="../settingsdialog/compilersetoptionwidget.cpp" line="-452"/>

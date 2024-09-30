@@ -5209,6 +5209,7 @@ int Editor::gutterClickedLine() const
 
 void Editor::toggleBreakpoint(int line)
 {
+    return;
     if (hasBreakpoint(line)) {
         mBreakpointLines.remove(line);
         if (inTab())
@@ -5225,6 +5226,7 @@ void Editor::toggleBreakpoint(int line)
 
 void Editor::clearBreakpoints()
 {
+    return;
     pMainWindow->debugger()->deleteBreakpoints(this);
     mBreakpointLines.clear();
     invalidate();
@@ -5232,6 +5234,7 @@ void Editor::clearBreakpoints()
 
 bool Editor::hasBreakpoint(int line)
 {
+    return false;
     return mBreakpointLines.contains(line);
 }
 

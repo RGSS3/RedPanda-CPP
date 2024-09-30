@@ -1137,6 +1137,9 @@ void MainWindow::applyUISettings()
         ui->tabMessages->setShrinkedFlag(true);
     if (settings.shrinkExplorerTabs())
         ui->tabExplorer->setShrinkedFlag(true);
+    ui->tabWatch->setVisible(false);
+    ui->tabDebug->setVisible(false);
+    ui->tabDebugConsole->setVisible(false);
 }
 
 QFileSystemWatcher *MainWindow::fileSystemWatcher()
@@ -2736,6 +2739,7 @@ void MainWindow::stretchExplorerPanel(bool open)
 
 void MainWindow::prepareDebugger()
 {
+    return;
     mDebugger->stop();
 
     // Clear logs
@@ -2749,9 +2753,9 @@ void MainWindow::prepareDebugger()
     mDebugger->setLeftPageIndexBackup(ui->tabExplorer->currentIndex());
 
     // Focus on the debugging buttons
-    ui->tabExplorer->setCurrentWidget(ui->tabWatch);
-    ui->tabMessages->setCurrentWidget(ui->tabDebug);
-    ui->debugViews->setCurrentWidget(ui->tabLocals);
+    //ui->tabExplorer->setCurrentWidget(ui->tabWatch);
+    //ui->tabMessages->setCurrentWidget(ui->tabDebug);
+    //ui->debugViews->setCurrentWidget(ui->tabLocals);
     stretchMessagesPanel(true);
     stretchExplorerPanel(true);
 
@@ -5004,6 +5008,7 @@ void MainWindow::onProjectRenameUnit()
 
 void MainWindow::onBreakpointRemove()
 {
+    return;
     int index =ui->tblBreakpoints->selectionModel()->currentIndex().row();
 
     PBreakpoint breakpoint = debugger()->breakpointModel()->breakpoint(index, debugger()->isForProject());
@@ -5640,7 +5645,7 @@ void MainWindow::closeEvent(QCloseEvent *event) {
         settings.setShowToolWindowBars(ui->actionTool_Window_Bars->isChecked());
 
         settings.setShowProject(ui->actionProject->isChecked());
-        settings.setShowWatch(ui->actionWatch->isChecked());
+        settings.setShowWatch(false);
         settings.setShowStructure(ui->actionStructure->isChecked());
         settings.setShowFiles(ui->actionFiles->isChecked());
         settings.setShowProblemSet(ui->actionProblem_Set->isChecked());
@@ -5756,6 +5761,9 @@ void MainWindow::showEvent(QShowEvent *)
     ui->tabMessages->setCurrentIndex(settings.bottomPanelIndex());
     ui->tabExplorer->setCurrentIndex(settings.leftPanelIndex());
     ui->debugViews->setCurrentIndex(settings.debugPanelIndex());
+    ui->tabWatch->setVisible(false);
+    ui->tabDebug->setVisible(false);
+    ui->tabDebugConsole->setVisible(false);
 }
 
 void MainWindow::hideEvent(QHideEvent *)
@@ -6481,6 +6489,7 @@ void MainWindow::on_actionContinue_triggered()
 
 void MainWindow::on_actionAdd_Watch_triggered()
 {
+    return;
     QString s = "";
     Editor *e = mEditorList->getEditor();
     if (e!=nullptr) {
@@ -6705,6 +6714,7 @@ void MainWindow::on_btnSearchAgain_clicked()
 
 void MainWindow::on_actionRemove_Watch_triggered()
 {
+    return;
     QModelIndexList lst=ui->watchView->selectionModel()->selectedRows();
     if (lst.count()<=1) {
         QModelIndex index =ui->watchView->currentIndex();
@@ -6737,12 +6747,14 @@ void MainWindow::on_actionRemove_Watch_triggered()
 
 void MainWindow::on_actionRemove_All_Watches_triggered()
 {
+    return;
     mDebugger->removeWatchVars(true);
 }
 
 
 void MainWindow::on_actionModify_Watch_triggered()
 {
+    return;
     QModelIndexList lst=ui->watchView->selectionModel()->selectedRows();
     if (lst.count()<=1) {
         QModelIndex index =ui->watchView->currentIndex();
@@ -6874,6 +6886,7 @@ void MainWindow::on_actionPrevious_Editor_triggered()
 
 void MainWindow::on_actionToggle_Breakpoint_triggered()
 {
+    return;
     Editor * editor = mEditorList->getEditor();
     if (editor)
         editor->toggleBreakpoint(editor->caretY());
@@ -6882,6 +6895,7 @@ void MainWindow::on_actionToggle_Breakpoint_triggered()
 
 void MainWindow::on_actionClear_all_breakpoints_triggered()
 {
+    return;
     Editor *e=mEditorList->getEditor();
     if (!e)
         return;
@@ -7388,6 +7402,7 @@ void MainWindow::showHideInfosTab(QWidget *widget, bool show)
             }
 
             ui->tabExplorer->removeTab(idx);
+             ui->tabWatch->setVisible(false);
         }
     } else {
         if (show && mTabInfosData.contains(widget)) {
@@ -7406,8 +7421,11 @@ void MainWindow::showHideInfosTab(QWidget *widget, bool show)
             } else {
                 ui->tabExplorer->addTab(widget, info->icon, info->text);
             }
+            ui->tabWatch->setVisible(false);
         }
+
     }
+
 }
 
 void MainWindow::showHideMessagesTab(QWidget *widget, bool show)
@@ -7464,6 +7482,8 @@ void MainWindow::prepareTabInfosData()
         info->icon = ui->tabExplorer->tabIcon(i);
         mTabInfosData[widget]=info;
     }
+    ui->tabWatch->setVisible(false);
+
 }
 
 void MainWindow::prepareTabMessagesData()
@@ -8838,6 +8858,7 @@ QList<QAction *> MainWindow::listShortCutableActions()
 
 void MainWindow::switchCurrentStackTrace(int idx)
 {
+    return;
     PTrace trace = mDebugger->backtraceModel()->backtrace(idx);
     if (trace) {
         Editor *e = openFile(trace->filename);
@@ -8877,6 +8898,9 @@ void MainWindow::on_actionTool_Window_Bars_triggered()
     ui->tabExplorer->setVisible(state);
     ui->tabMessages->setVisible(state);
     ui->actionTool_Window_Bars->setChecked(state);
+    ui->tabWatch->setVisible(false);
+    ui->tabDebug->setVisible(false);
+    ui->tabDebugConsole->setVisible(false);
 }
 
 void MainWindow::on_actionStatus_Bar_triggered()
