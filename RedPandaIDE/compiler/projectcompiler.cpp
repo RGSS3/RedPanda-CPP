@@ -249,6 +249,8 @@ void ProjectCompiler::writeMakeDefines(QFile &file, bool &genModuleDef)
     cIncludeArguments += getProjectIncludeArguments();
     QStringList cxxIncludeArguments = getCppIncludeArguments();
     cxxIncludeArguments += getProjectIncludeArguments();
+    cxxIncludeArguments += getReflextiveArguments();
+    cIncludeArguments += getReflextiveArguments();
 #ifdef Q_OS_WIN
     QStringList resourceArguments = parseArguments(mProject->options().resourceCmd, devCppMacroVariables(), true);
 #endif

@@ -125,6 +125,7 @@ bool FileCompiler::prepareForCompile()
         mArguments += getCCompileArguments(mOnlyCheckSyntax);
         mArguments += getCIncludeArguments();
         mArguments += getProjectIncludeArguments();
+        mArguments += getReflextiveArguments();
         strFileType = "C";
         mCompiler = compilerSet()->CCompiler();
         break;
@@ -132,6 +133,7 @@ bool FileCompiler::prepareForCompile()
         mArguments += getCppCompileArguments(mOnlyCheckSyntax);
         mArguments += getCppIncludeArguments();
         mArguments += getProjectIncludeArguments();
+        mArguments += getReflextiveArguments();
         strFileType = "C++";
         mCompiler = compilerSet()->cppCompiler();
         break;

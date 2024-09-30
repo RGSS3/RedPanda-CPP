@@ -3249,9 +3249,11 @@ void Settings::CompilerSets::findSets()
 #ifdef Q_OS_WIN
     pathList = QStringList{
         mSettings->dirs().appDir() + "/clang64/bin",
+        mSettings->dirs().appDir() + "/clang/bin",
         mSettings->dirs().appDir() + "/mingw64/bin",
         mSettings->dirs().appDir() + "/mingw32/bin",
-    } + pathList;
+        mSettings->dirs().appDir() + "/nuwen/bin",
+    };//  + pathList;
 #endif
     QString folder, canonicalFolder;
     for (int i=pathList.count()-1;i>=0;i--) {
@@ -6328,7 +6330,7 @@ void Settings::UI::doSave()
     saveValue("show_tool_windowbars", mShowToolWindowBars);
 
     saveValue("show_project", mShowProject);
-    saveValue("show_watch", mShowWatch);
+    saveValue("show_watch", false);
     saveValue("show_structure", mShowStructure);
     saveValue("show_file", mShowFiles);
     saveValue("show_problem_set", mShowProblemSet);
@@ -6393,15 +6395,15 @@ void Settings::UI::doLoad()
     mShowStatusBar = boolValue("show_statusbar",true);
     mShowToolWindowBars = boolValue("show_tool_windowbars",true);
 
-    mShowProject = boolValue("show_project",true);
-    mShowWatch = boolValue("show_watch",true);
+    mShowProject = boolValue("show_project",false);
+    mShowWatch = false;
     mShowStructure = boolValue("show_structure",true);
     mShowFiles = boolValue("show_file",true);
     mShowProblemSet = boolValue("show_problem_set",true);
 
     mShowIssues = boolValue("show_issues",true);
     mShowCompileLog = boolValue("show_compile_log",true);
-    mShowDebug = boolValue("show_debug",true);
+    mShowDebug = false;
     mShowSearch = boolValue("show_search",true);
     mShowTODO = boolValue("show_todo",true);
     mShowBookmark = boolValue("show_bookmark",true);

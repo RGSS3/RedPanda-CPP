@@ -50,6 +50,7 @@ private:
     // Compiler interface
 private:
     bool mOnlyClean;
+
 protected:
     bool prepareForCompile() override;
     bool prepareForRebuild() override;

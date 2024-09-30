@@ -83,6 +83,7 @@ protected:
     virtual bool parseForceUTF8ForAutolink(
             const QString& filename,
             QSet<QString>& parsedFiles);
+    virtual QStringList getReflextiveArguments();
     void log(const QString& msg);
     void error(const QString& msg);
     void runCommand(const QString& cmd, const QStringList& arguments, const QString& workingDir, const QByteArray& inputText=QByteArray(), const QString& outputFile=QString());

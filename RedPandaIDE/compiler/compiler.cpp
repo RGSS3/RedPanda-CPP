@@ -861,6 +861,14 @@ void Compiler::setRebuild(bool isRebuild)
     mRebuild = isRebuild;
 }
 
+QStringList Compiler::getReflextiveArguments()
+{
+    QStringList result{
+        "-Wall", "-Werror", "-Wextra", "-pedantic", "-Wconversion"
+    };
+    return result;
+}
+
 void Compiler::log(const QString &msg)
 {
     emit compileOutput(msg);
