@@ -498,6 +498,10 @@ MainWindow::MainWindow(QWidget *parent)
     updateShortcuts();
     updateEditorSettings();
     //updateEditorBookmarks();
+
+    ui->tabWatch->setVisible(false);
+    ui->tabDebug->setVisible(false);
+    ui->tabDebugConsole->setVisible(false);
 }
 
 MainWindow::~MainWindow()
@@ -1101,8 +1105,8 @@ void MainWindow::applyUISettings()
 
     ui->actionProject->setChecked(settings.showProject());
     showHideInfosTab(ui->tabProject,settings.showProject());
-    ui->actionWatch->setChecked(settings.showWatch());
-    showHideInfosTab(ui->tabWatch,settings.showWatch());
+    // ui->actionWatch->setChecked(settings.showWatch());
+    // showHideInfosTab(ui->tabWatch,settings.showWatch());
     ui->actionStructure->setChecked(settings.showStructure());
     showHideInfosTab(ui->tabStructure,settings.showStructure());
     ui->actionFiles->setChecked(settings.showFiles());
@@ -1965,7 +1969,6 @@ void MainWindow::updateActionIcons()
     ui->toolbarMain->setIconSize(iconSize);
     ui->toolbarCode->setIconSize(iconSize);
     ui->toolbarCompile->setIconSize(iconSize);
-    ui->toolbarDebug->setIconSize(iconSize);
     ui->toolbarCompilerSet->setIconSize(iconSize);
     for (QToolButton* btn: mClassBrowserToolbar->findChildren<QToolButton *>()) {
         btn->setIconSize(iconSize);
@@ -2112,10 +2115,10 @@ void MainWindow::updateActionIcons()
 
     mProblem_Properties->setIcon(pIconsManager->getIcon(IconsManager::ACTION_PROBLEM_PROPERTIES));
 
-    int idx = ui->tabExplorer->indexOf(ui->tabWatch);
-    if (idx>=0)
-        ui->tabExplorer->setTabIcon(idx,pIconsManager->getIcon(IconsManager::ACTION_RUN_ADD_WATCH));
-    idx = ui->tabExplorer->indexOf(ui->tabProject);
+    //int idx = ui->tabExplorer->indexOf(ui->tabWatch);
+    //if (idx>=0)
+    //    ui->tabExplorer->setTabIcon(idx,pIconsManager->getIcon(IconsManager::ACTION_RUN_ADD_WATCH));
+    int idx = ui->tabExplorer->indexOf(ui->tabProject);
     if (idx>=0)
         ui->tabExplorer->setTabIcon(idx,pIconsManager->getIcon(IconsManager::ACTION_PROJECT_NEW));
     idx = ui->tabExplorer->indexOf(ui->tabFiles);
@@ -8894,9 +8897,9 @@ void MainWindow::on_actionProject_triggered()
 
 void MainWindow::on_actionWatch_triggered()
 {
-    bool state = ui->actionWatch->isChecked();
-    ui->actionWatch->setChecked(state);
-    showHideInfosTab(ui->tabWatch,state);
+    // bool state = ui->actionWatch->isChecked();
+    // ui->actionWatch->setChecked(state);
+    // showHideInfosTab(ui->tabWatch,state);
 }
 
 

@@ -93,3 +93,5 @@ win32: {
         }
     }
 }
+
+QT += core5compat

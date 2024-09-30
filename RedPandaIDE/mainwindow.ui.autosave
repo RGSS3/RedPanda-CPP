@@ -284,12 +284,6 @@
     <addaction name="actionSubmit_Issues"/>
     <addaction name="actionAbout"/>
    </widget>
-   <widget class="QMenu" name="menuRefactor">
-    <property name="title">
-     <string>Refactor</string>
-    </property>
-    <addaction name="actionRename_Symbol"/>
-   </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
      <string>View</string>
@@ -344,7 +338,6 @@
    <addaction name="menuView"/>
    <addaction name="menuSearch"/>
    <addaction name="menuCode"/>
-   <addaction name="menuRefactor"/>
    <addaction name="menuProject"/>
    <addaction name="menuExecute"/>
    <addaction name="menuTools"/>

@@ -10,7 +10,7 @@
     </message>
     <message>
         <source>&lt;h1&gt;Red-Panda Dev-Cpp 7&lt;/h1&gt;</source>
-        <translation type="vanished">&lt;h1&gt;小熊猫Dev-Cpp 7&lt;/h1&gt;</translation>
+        <translation type="vanished">&lt;h1&gt;能锚Cpp&lt;/h1&gt;</translation>
     </message>
     <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -91,7 +91,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Red Panda Dev-C++ (&lt;=6.7.5):</source>
         <oldsource>Red Panda Dev-C++:</oldsource>
-        <translation type="vanished">小熊猫Dev-C++ (&lt;=6.7.5):</translation>
+        <translation type="vanished">能锚Cpp (&lt;=6.7.5):</translation>
     </message>
     <message>
         <location line="+16"/>
