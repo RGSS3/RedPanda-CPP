@@ -1,6 +1,12 @@
 name: Unit
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
 
 jobs:
   teal_lua_consistency:
