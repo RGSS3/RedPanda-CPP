@@ -204,6 +204,7 @@ int main(int argc, char** argv) {
         printf("\n 1 means the STDIN is redirected by Red Panda C++; 0 means not\n");
         PauseExit(EXIT_WRONG_ARGUMENTS,false);
     }
+    system("chcp 65001 > nul");
 
     // Make us look like the paused program
     SetConsoleTitleA(argv[3]);

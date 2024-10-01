@@ -399,12 +399,13 @@ QStringList Compiler::getCharsetArgument(const QByteArray& encoding,FileType fil
         }
         //qDebug()<<encodingName<<execEncodingName;
         if (checkSyntax) {
-            result << "-finput-charset=" + encodingName;
+            //result << "-finput-charset=" + encodingName;
         } else if (QString::compare(encodingName, execEncodingName, Qt::CaseInsensitive) != 0) {
+            /*
             result += {
                 "-finput-charset=" + encodingName,
                 "-fexec-charset=" + execEncodingName,
-            };
+            };*/
         }
     }
     return result;
@@ -415,6 +416,9 @@ QStringList Compiler::getCCompileArguments(bool checkSyntax)
     QStringList result;
     if (checkSyntax) {
         result << "-fsyntax-only";
+        foreach(const QString &arg, getReflextiveArguments()) {
+            result << arg;
+        }
     }
 
     QMap<QString, QString> compileOptions;
@@ -470,6 +474,9 @@ QStringList Compiler::getCppCompileArguments(bool checkSyntax)
     QStringList result;
     if (checkSyntax) {
         result << "-fsyntax-only";
+        foreach(const QString &arg, getReflextiveArguments()) {
+            result << arg;
+        }
     }
     QMap<QString, QString> compileOptions;
     if (mProject && !mProject->options().compilerOptions.isEmpty()) {
