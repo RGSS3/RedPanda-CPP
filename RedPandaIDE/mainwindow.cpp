@@ -1106,7 +1106,7 @@ void MainWindow::applyUISettings()
     ui->actionProject->setChecked(settings.showProject());
     showHideInfosTab(ui->tabProject,settings.showProject());
     ui->actionWatch->setChecked(false);
-    showHideInfosTab(ui->tabWatch,settings.showWatch());
+    showHideInfosTab(ui->tabWatch,false);
     ui->actionStructure->setChecked(settings.showStructure());
     showHideInfosTab(ui->tabStructure,settings.showStructure());
     ui->actionFiles->setChecked(settings.showFiles());
@@ -1120,7 +1120,7 @@ void MainWindow::applyUISettings()
     ui->actionTools_Output->setChecked(settings.showCompileLog());
     showHideMessagesTab(ui->tabToolsOutput,settings.showCompileLog());
     ui->actionDebug_Window->setChecked(settings.showDebug());
-    showHideMessagesTab(ui->tabDebug,settings.showDebug());
+    showHideMessagesTab(ui->tabDebug,false);
     ui->actionSearch->setChecked(settings.showSearch());
     showHideMessagesTab(ui->tabSearch,settings.showSearch());
     ui->actionTODO->setChecked(settings.showTODO());
@@ -1259,7 +1259,10 @@ void MainWindow::executeTool(PToolItem item)
             file.close();
             QString cmd="cmd";
             QStringList args{"/C",file.fileName()};
+
+
             command = escapeCommandForPlatformShell(cmd, args);
+
             auto [o, _, em] = runAndGetOutput(cmd, workDir, args, inputContent);
             output = o;
             errorMessage = em;
@@ -4783,7 +4786,7 @@ void MainWindow::onFilesViewOpenInTerminal()
     if (!path.isEmpty()) {
         QFileInfo fileInfo(path);
 #ifdef Q_OS_WIN
-        openShell(fileInfo.path(),"cmd.exe",getDefaultCompilerSetBinDirs());
+        openShell(fileInfo.path(),"powershell",getDefaultCompilerSetBinDirs());
 #else
         openShell(fileInfo.path(),pSettings->environment().terminalPath(),getDefaultCompilerSetBinDirs());
 #endif
@@ -6970,7 +6973,7 @@ void MainWindow::on_actionOpen_Terminal_triggered()
         QFileInfo info(editor->filename());
         if (!info.path().isEmpty()) {
 #ifdef Q_OS_WIN
-            openShell(info.path(),"cmd.exe",getBinDirsForCurrentEditor());
+            openShell(info.path(),"powershell",getBinDirsForCurrentEditor());
 #else
             openShell(info.path(),pSettings->environment().terminalPath(),getBinDirsForCurrentEditor());
 #endif
@@ -7323,7 +7326,7 @@ void MainWindow::on_actionProject_Open_In_Terminal_triggered()
     if (!mProject)
         return;
 #ifdef Q_OS_WIN
-    openShell(mProject->directory(),"cmd.exe",mProject->binDirs());
+    openShell(mProject->directory(),"powershell",mProject->binDirs());
 #else
     openShell(mProject->directory(),pSettings->environment().terminalPath(),mProject->binDirs());
 #endif
@@ -7395,7 +7398,8 @@ void MainWindow::showHideInfosTab(QWidget *widget, bool show)
     if (widget == ui->tabWatch) {
         int idx = findTabIndex(ui->tabExplorer,widget);
         if (idx >= 0) {
-            ui->tabExplorer->removeTab(idx);
+            //i->tabExplorer->removeTab(idx);
+            ui->tabExplorer->setTabVisible(idx, false);
         }
         return;
     }
@@ -7408,8 +7412,9 @@ void MainWindow::showHideInfosTab(QWidget *widget, bool show)
                 info->text = ui->tabExplorer->tabText(idx);
             }
 
-            ui->tabExplorer->removeTab(idx);
-            ui->tabWatch->setVisible(false);
+            //ui->tabExplorer->removeTab(idx);
+            //ui->tabWatch->setVisible(false);
+            ui->tabExplorer->setTabVisible(idx, false);
         }
     } else {
         if (show && mTabInfosData.contains(widget)) {
@@ -7424,11 +7429,12 @@ void MainWindow::showHideInfosTab(QWidget *widget, bool show)
                 }
             }
             if (insert>=0) {
-                ui->tabExplorer->insertTab(insert, widget, info->icon, info->text);
+                //ui->tabExplorer->insertTab(insert, widget, info->icon, info->text);
+                ui->tabExplorer->setTabVisible(idx, true);
             } else {
                 ui->tabExplorer->addTab(widget, info->icon, info->text);
             }
-            ui->tabWatch->setVisible(false);
+
         }
 
     }
@@ -7445,7 +7451,9 @@ void MainWindow::showHideMessagesTab(QWidget *widget, bool show)
                 info->icon = ui->tabMessages->tabIcon(idx);
                 info->text = ui->tabMessages->tabText(idx);
             }
-            ui->tabMessages->removeTab(idx);
+            //ui->tabMessages->removeTab(idx);
+            widget->setVisible(false);
+            ui->tabMessages->setTabVisible(idx, false);
         }
     } else {
         if (show && mTabMessagesData.contains(widget)) {
@@ -7460,9 +7468,12 @@ void MainWindow::showHideMessagesTab(QWidget *widget, bool show)
                 }
             }
             if (insert>=0) {
-                ui->tabMessages->insertTab(insert, widget, info->icon, info->text);
+                widget->setVisible(widget != ui->tabDebug);
+
+                //ui->tabMessages->insertTab(insert, widget, info->icon, info->text);
             } else {
                 ui->tabMessages->addTab(widget, info->icon, info->text);
+                widget->setVisible(widget != ui->tabDebug);
             }
         }
     }
@@ -7798,7 +7809,7 @@ void MainWindow::initEditorActions()
     ui->menuEdit->menuAction()->setVisible(false);
     ui->menuSelection->menuAction()->setVisible(false);
     ui->menuRefactor->menuAction()->setVisible(false);
-
+    /*
     backupMenuForEditor(ui->menuEdit, mMenuEditBackup);
     backupMenuForEditor(ui->menuSelection, mMenuSelectionBackup);
     backupMenuForEditor(ui->menuCode, mMenuCodeBackup);
@@ -7811,7 +7822,7 @@ void MainWindow::initEditorActions()
     // changeEditorActionParent(ui->actionSave, tr("File"));
     // changeEditorActionParent(ui->actionSaveAs, tr("File"));
     // changeEditorActionParent(ui->actionClose, tr("File"));
-
+    */
     // changeEditorActionParent(ui->actionFind, tr("Search"));
     // changeEditorActionParent(ui->actionReplace, tr("Search"));
     changeEditorActionParent(ui->actionFind_references, tr("Search"));
@@ -8978,7 +8989,7 @@ void MainWindow::on_actionDebug_Window_triggered()
 {
     bool state = ui->actionDebug_Window->isChecked();
     ui->actionDebug_Window->setChecked(state);
-    showHideMessagesTab(ui->tabDebug, state);
+    showHideMessagesTab(ui->tabDebug, false);
 }
 
 

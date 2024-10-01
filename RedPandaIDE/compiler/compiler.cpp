@@ -864,7 +864,9 @@ void Compiler::setRebuild(bool isRebuild)
 QStringList Compiler::getReflextiveArguments()
 {
     QStringList result{
-        "-Wall", "-Werror", "-Wextra", "-pedantic", "-Wconversion"
+        "-Wall", "-Werror", "-Wextra", "-pedantic", "-Wconversion",
+        "-finput-charset=utf-8",
+        "-fexec-charset=utf-8"
     };
     return result;
 }
