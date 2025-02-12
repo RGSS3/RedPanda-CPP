@@ -13,6 +13,7 @@ CONFIG += embed_translations
 # uncomment the following line to enable sdcc support
 CONFIG += ENABLE_SDCC
 
+
 # uncomment the following line to enable Lua-based add-on support
 # CONFIG += ENABLE_LUA_ADDON
 

@@ -873,12 +873,10 @@ QStringList Compiler::getReflextiveArguments()
     QStringList result{
         "-Wall", "-Werror", "-Wextra",
         "-pedantic", "-Wimplicit-fallthrough", "-Wsequence-point",
-        "-Wswitch-default", "-Wswitch-unreachable", "-Wswitch-enum",
-        "-Wstringop-truncation", "-Wbool-compare", "-Wtautological-compare",
-        "-Wfloat-equal", "-Wshadow=global", "-Wpointer-arith", "-Wpointer-compare",
-        "-Wcast-align", "-Wcast-qual", "-Wconversion", "-Wwrite-strings", "-Wdangling-else", "-Wlogical-op",
-        "-finput-charset=utf-8",
-        "-fexec-charset=utf-8"
+        "-Wswitch-default", "-Wswitch-enum",
+        "-Wtautological-compare",
+        "-Wfloat-equal", "-Wshadow-all", "-Wpointer-arith", "-Wpointer-compare",
+        "-Wcast-align", "-Wcast-qual", "-Wconversion", "-Wwrite-strings", "-Wdangling-else",
     };
     return result;
 }

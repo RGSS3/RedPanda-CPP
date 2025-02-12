@@ -301,7 +301,7 @@ int main(int argc, char** argv) {
 
     // Done? Print return value of executed program
     printf("\n--------------------------------");
-    printf("\nProcess exited after %.4g seconds with return value %lu (%.4g ms cpu time, %lld KB mem used).\n",seconds,returnvalue, execSeconds, peakMemory);
+    printf("\nProcess exited after %.4g seconds with return value %08lX(%ld) (%.4g ms cpu time, %lld KB mem used).\n",seconds,returnvalue, returnvalue, execSeconds, peakMemory);
     PauseExit(returnvalue,reInp);
     return 0;
 }
